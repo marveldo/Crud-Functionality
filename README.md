@@ -8,6 +8,7 @@ A brief description on how the api can be used
 
 
 for the test script visit https://github.com/marveldo/Crud-Functionality/blob/main/test.py
+for Validation used in the development of the api visit https://github.com/marveldo/Crud-Functionality/blob/main/api/views.py
 
 
 ## UML REPRESENTATION
