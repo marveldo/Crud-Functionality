@@ -3,18 +3,6 @@
 
 A brief description on how the api can be used
 
-
-## Testing
-
-
-for the test script visit https://github.com/marveldo/Crud-Functionality/blob/main/test.py
-for Validation used in the development of the api visit https://github.com/marveldo/Crud-Functionality/blob/main/api/views.py
-
-
-## UML REPRESENTATION
-
-![UML Diagram](https://github.com/marveldo/Crud-Functionality/blob/main/UML%20diagram%20for%20database.png)
-
 ## 
 #### Create Profile
 ```http
@@ -92,6 +80,15 @@ for Validation used in the development of the api visit https://github.com/marve
 ```http
   Succesfully deleted
 ```
+## Testing
+
+
+for the test script visit https://github.com/marveldo/Crud-Functionality/blob/main/test.py
+for Validation used in the development of the api visit https://github.com/marveldo/Crud-Functionality/blob/main/api/views.py
+
+## UML REPRESENTATION
+
+![UML Diagram](https://github.com/marveldo/Crud-Functionality/blob/main/UML%20diagram%20for%20database.png)
 
 ## Deployment
 
