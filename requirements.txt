@@ -6,6 +6,7 @@ django-cors-headers
 djangorestframework
 idna
 pyscopg2==66.0.2
+psycopg2==2.9.6
 pytz
 requests
 sqlparse
