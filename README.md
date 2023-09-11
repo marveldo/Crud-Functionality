@@ -93,6 +93,17 @@ for Validation used in the development of the api visit https://github.com/marve
 ## Deployment
 
 Project was succesfully deployed to render with 
+
 the live file being https://crud-functionality-hqud.onrender.com/api
+
+firstly i commited the project to github then went over to render to host directly from github 
+
+it required downloading the requirements.txt file with pip install -r requirements.txt and then gunicorn was needed for the execution of the file 
+
+##Challenges and limitation
+Authentication methods not used
+
+
+The data cannot be queried from the name more from the id
 
 
