@@ -43,7 +43,7 @@
     let form2 = document.getElementById('test-update')
     let form3 = document.getElementById('form-3')
    
-    let url2 = `http://127.0.0.1:8000/api`
+    let url2 = `https://crud-functionality-hqud.onrender.com/api`
 
     form.addEventListener('submit',(e)=>{
 
@@ -65,7 +65,7 @@
         e.preventDefault;
         let name = e.target.name.value
         let id = e.target.id.value
-        let url = `http://127.0.0.1:8000/api/${id}/`
+        let url = `https://crud-functionality-hqud.onrender.com/api/${id}/`
         let options = {
           method : 'PUT',
           headers : {
@@ -81,7 +81,7 @@
     form3.addEventListener('submit',(e)=>{
         e.preventDefault();
         let id = e.target.id.value
-        let url3 = `http://127.0.0.1:8000/api/${id}/`
+        let url3 = `https://crud-functionality-hqud.onrender.com/api/${id}/`
         let options = {
           method : 'DELETE',
           headers : {
