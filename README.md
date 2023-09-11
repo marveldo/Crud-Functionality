@@ -7,7 +7,7 @@ A brief description on how the api can be used
 ## Testing
 
 
-for the test file visit [![test.py](https://github.com/marveldo/Crud-Functionality/blob/main/test.py)] 
+for the test file visit https://github.com/marveldo/Crud-Functionality/blob/main/test.py
 
 
 ## UML REPRESENTATION
