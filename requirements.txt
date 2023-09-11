@@ -11,3 +11,4 @@ requests
 sqlparse
 tzdata
 urllib3
+gunicorn
