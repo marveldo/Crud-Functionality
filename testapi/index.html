@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="margin-top:20%">
+        <h1>Create your name in this database</h1>
+        <form id="test-form">
+            <input type="text" placeholder="enter your name" name="name">
+        </form>
+    </div>
+    <div style="margin-top:5%">
+        <h1>Get your id</h1>
+        <form id="test-update">
+            <input type="number" placeholder="enter your id" name="id">
+            <input type="text" placeholder="Enter your name" name="name">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div style="margin-top:5%">
+        <h1>Update</h1>
+        <form id="test-update">
+            <input type="number" placeholder="enter your id" name="id">
+            <input type="text" placeholder="Enter your name" name="name">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div style="margin-top:5%">
+        <h1>Delete</h1>
+        <form id="form-3">
+            <input type="number" placeholder="enter your id" name="id">
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+<script>
+   
+    let form = document.getElementById('test-form')
+    let form2 = document.getElementById('test-update')
+    let form3 = document.getElementById('form-3')
+   
+    let url2 = `http://127.0.0.1:8000/api`
+
+    form.addEventListener('submit',(e)=>{
+
+        e.preventDefault();
+        let name = e.target.name.value
+        
+        let options = {
+          method : 'POST',
+          headers : {
+            'Content-Type': 'application/json'
+          },
+          body : JSON.stringify({'name': name })
+        }
+        fetch(url2,options).then(response => response.json()).then(data => console.log(data)).catch(error => console.log(error))
+        
+    })
+
+    form2.addEventListener('submit',(e)=>{
+        e.preventDefault;
+        let name = e.target.name.value
+        let id = e.target.id.value
+        let url = `http://127.0.0.1:8000/api/${id}/`
+        let options = {
+          method : 'PUT',
+          headers : {
+            'Content-Type': 'application/json'
+          },
+          body : JSON.stringify({'name': name })
+        }
+        fetch(url,options).then(response => response.json()).then(data => console.log(data)).catch(error => console.log(error))
+
+        
+    })
+
+    form3.addEventListener('submit',(e)=>{
+        e.preventDefault();
+        let id = e.target.id.value
+        let url3 = `http://127.0.0.1:8000/api/${id}/`
+        let options = {
+          method : 'DELETE',
+          headers : {
+            'Content-Type': 'application/json'
+          }
+         
+        }
+        fetch(url3,options).then(response => response.json()).then(data => console.log(data)).catch(error => console.log(error))
+    })
+   
+</script>
+</html>
