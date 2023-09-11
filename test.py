@@ -1,31 +1,42 @@
 import requests
 
-name = input('  Enter your name')
-url = f'http://127.0.0.1:8000/api'
-data = {'name': name}
+name1 = 'Marvelous'
+name2 = 'John'
+
+url = f'https://crud-functionality-hqud.onrender.com/api'
+data = {'name': name1}
 
 response = requests.post(url,json=data)
-print(response.text)
+data = response.json()
+print(f"Your data has been created it is {data}")
+
+
 
 def get(id):
-    url3 = f'http://127.0.0.1:8000/api/{id}/'
+    url3 = f'https://crud-functionality-hqud.onrender.com/api/{id}/'
     response = requests.get(url3)
-    print(response.text)
+    print(f"Here is your data {response.text}")
+    
 
-get(int(input("enter your id")))
+get(int(data['id']))
 
 def update(id,name):
-    url5 = f'http://127.0.0.1:8000/api/{id}/'
+    url5 = f'https://crud-functionality-hqud.onrender.com/api/{id}/'
     data = {'name': name}
+    
     response = requests.put(url5, json= data)
-    print(response.text)
 
-update(int(input("enter your id")), input("enter the new name"))
+    print(f"your data has been updated to {response.text}")
+
+update(int(data['id']), name2)
 
 def delete(id):
-    url4 = f'http://127.0.0.1:8000/api/{id}/'
-    response = requests.delete(url4)
-    print(response.text)
+    url4 = f'https://crud-functionality-hqud.onrender.com/api/{id}/'
 
-delete(int(input("Enter your id")))
+    response = requests.delete(url4)
+
+    print("Your data has been removed")
+    
+
+delete(data['id'])
 
