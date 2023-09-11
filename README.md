@@ -100,7 +100,9 @@ firstly i commited the project to github then went over to render to host direct
 
 it required downloading the requirements.txt file with pip install -r requirements.txt and then gunicorn was needed for the execution of the file 
 
-##Challenges and limitation
+## Challenges and limitation
+
+
 Authentication methods not used
 
 
