@@ -9,13 +9,13 @@ A brief description on how the api can be used
   GET /api
 ```
 
-#### Method of Usage
+#### Request
 ```http
   data = {"name": "anyname"}
   requests.post(f'https://crud-functionality-hqud.onrender.com/api/{id}/',json = data)
 
 ```
-#### What it returns
+#### Response
 ```http
   data = {"name": "anyname","id": "A given id"}
 ```
@@ -29,13 +29,13 @@ A brief description on how the api can be used
 | :-------- | :------- | :-------------------------------- |
 | `id`      | ` Integer` | GET |
 
-#### Method of Usage
+#### Request
 ```http
   data = {"name": "anyname"}
   requests.get(f'https://crud-functionality-hqud.onrender.com/api/{id}/')
 
 ``` 
-#### What it returns
+#### Response
 ```http
   data = {"name": "anyname","id": "id passed into it"}
 ```
@@ -50,13 +50,13 @@ A brief description on how the api can be used
 | :-------- | :------- | :-------------------------------- |
 | `id`      | ` Integer` | PUT |
 
-#### Method of Usage
+#### Request
 ```http
   data = {"name": "Updated name"}
   requests.put(f'https://crud-functionality-hqud.onrender.com/api/{id}/',json = data)
 
 ```
-#### What it returns
+#### Response
 ```http
   data = {"name": "Updated name","id": "id passed into it"}
 
@@ -71,12 +71,12 @@ A brief description on how the api can be used
 | :-------- | :------- | :-------------------------------- |
 | `id`      | ` Integer` | Delete |
 
-#### Method of Usage
+#### Request
 ```http
   requests.delete(f'https://crud-functionality-hqud.onrender.com/api/{id}/')
 
 ```
-#### What it returns
+#### Response
 ```http
   Succesfully deleted
 ```
