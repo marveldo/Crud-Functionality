@@ -7,12 +7,12 @@ A brief description on how the api can be used
 ## Testing
 
 
-for the test file visit https://github.com/marveldo/Crud-Functionality/blob/main/test.py
+for the test script visit https://github.com/marveldo/Crud-Functionality/blob/main/test.py
 
 
 ## UML REPRESENTATION
 
-[![UML Diagram](https://github.com/marveldo/Crud-Functionality/blob/main/UML%20diagram%20for%20database.png)]
+![UML Diagram](https://github.com/marveldo/Crud-Functionality/blob/main/UML%20diagram%20for%20database.png)
 
 ## 
 #### Create Profile
