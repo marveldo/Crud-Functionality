@@ -252,6 +252,12 @@ for the test script visit https://github.com/marveldo/Crud-Functionality/blob/ma
 
 a picture of the response when testing the api 
 
+to run this test script 
+
+```bash
+     python test.py
+   ```
+
 ![Picture](https://github.com/marveldo/Crud-Functionality/blob/main/Hng%20test.png)
 
 
