@@ -104,6 +104,7 @@ Before you begin, ensure you have met the following requirements:
     "name": "Michael Oliver",
     
   }
+  status : HTTP_201_CREATED
   ```
 
 ### Get a Person by ID
@@ -130,6 +131,8 @@ Before you begin, ensure you have met the following requirements:
   {
     "name": " Updated Michael Oliver",
   }
+  
+  
   ```
 
 - **Response:**
@@ -140,13 +143,15 @@ Before you begin, ensure you have met the following requirements:
     "name": "Updated Michael Oliver",
    
   }
+  
+    status : `HTTP_202_ACCEPTED`
   ```
 
 ### Delete a Person
 
 - **URL:** `/api/id/`
 - **Method:** `DELETE`
-- **Response:** `204 No Content`
+- **Response:** `HTTP_204_No_Content`
 
 ## Request and Response Formats
 
@@ -169,6 +174,7 @@ Content-Type: application/json
   "name": "Michael john",
   
 }
+
 ```
 
 **Response:**
@@ -179,6 +185,7 @@ Content-Type: application/json
   "name": "Michael John",  
   
 }
+status : HTTP_201_CREATED
 ```
 
 ### Get a Person by ID
@@ -197,6 +204,7 @@ GET /api/1/
   "name": "Michael John",
   
 }
+
 ```
 
 ### Update a Person
@@ -219,6 +227,8 @@ Content-Type: application/json
   "id": "1",
   "name": "Updated Michael",
 }
+status : HTTP_202_ACCEPTED
+
 ```
 
 ### Delete a Person
@@ -231,9 +241,9 @@ DELETE /api/1/
 
 **Response:**
 
-```http
- status:204 No Content
-```
+
+ status:HTTP_204_No_Content
+
 
 ## Testing
 for the test script visit https://github.com/marveldo/Crud-Functionality/blob/main/test.py

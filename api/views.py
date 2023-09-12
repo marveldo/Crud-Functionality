@@ -28,7 +28,7 @@ def Getprofile(request,pk):
            return Response(status=status.HTTP_404_NOT_FOUND)
     
         serializer = ProfileSerializer(profile, many = False)
-        return Response(serializer.data)
+        return Response(serializer.data, status = status.HTTP_202_ACCEPTED)
     
     if request.method == 'PUT':
         try:
