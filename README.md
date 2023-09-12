@@ -21,6 +21,8 @@
     - [Get a Person by ID](#get-a-person-by-id-1)
     - [Update a Person](#update-a-person-1)
     - [Delete a Person](#delete-a-person-1)
+  -[Deployment](#deployment)
+  -[challenges and limitations](#challenges-and-limitation)
  
 
 
@@ -48,7 +50,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/marveldo/Crud-Functionality.git
+   git clone https://github.com/your-own-username/Crud-Functionality.git
    ```
 
 2. Navigate to the project directory:
@@ -76,6 +78,8 @@ Before you begin, ensure you have met the following requirements:
    ```
 
    The API will be available at `http://127.0.0.1:8000/`.
+
+## API Endpoints
 
 ### Create a Person
 
@@ -239,9 +243,6 @@ a picture of the response when testing the api
 
 for Validation used in the development of the api visit https://github.com/marveldo/Crud-Functionality/blob/main/api/views.py
 
-## UML REPRESENTATION
-
-![UML Diagram](https://github.com/marveldo/Crud-Functionality/blob/main/UML%20diagram%20for%20database.png)
 
 ## Deployment
 
