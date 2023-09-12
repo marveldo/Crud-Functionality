@@ -43,16 +43,13 @@ def Getprofile(request,pk):
         except Profile.DoesNotExist:
            return Response(status=status.HTTP_404_NOT_FOUND)
         
-      
-            
-
-             
         serializer = ProfileSerializer(profile, data = request.data)
+       
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status = status.HTTP_200_OK)
         else:
-             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
     if request.method == 'DELETE':
         try:
