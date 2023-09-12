@@ -246,6 +246,12 @@ DELETE /api/1
 
  status: 204
 
+## Error Handling
+
+- if the provided id does not exist you will receive a **404 Not Found** status
+
+- if the request.data does not contain a valid name you will receive a **404 Bad Request** status
+
 
 ## Testing
 for the test script visit https://github.com/marveldo/Crud-Functionality/blob/main/test.py
