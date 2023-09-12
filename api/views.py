@@ -45,7 +45,7 @@ def Getprofile(request,pk):
         try:
             data_info = data['name']
         except:
-            return Response(status = status.HTTP_400_BAD_REQUEST)
+            return Response(serializer.data,status = status.HTTP_400_BAD_REQUEST)
 
              
         serializer = ProfileSerializer(profile, data = request.data)
