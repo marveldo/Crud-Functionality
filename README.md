@@ -104,7 +104,7 @@ Before you begin, ensure you have met the following requirements:
     "name": "Michael Oliver",
     
   }
-  status : HTTP_201_CREATED
+  status : 201
   ```
 
 ### Get a Person by ID
@@ -120,7 +120,7 @@ Before you begin, ensure you have met the following requirements:
     
   }
 
-  status : HTTP_200_OK
+  status : 200
   ```
 
 ### Update a Person
@@ -146,14 +146,14 @@ Before you begin, ensure you have met the following requirements:
    
   }
   
-    status : HTTP_200_OK
+    status : 200
   ```
 
 ### Delete a Person
 
 - **URL:** `/api/id`
 - **Method:** `DELETE`
-- **Response:** `HTTP_204_No_Content`
+- **Response:** `204`
 
 ## Request and Response Formats
 
@@ -187,7 +187,7 @@ Content-Type: application/json
   "name": "Michael John",  
   
 }
-status : HTTP_201_CREATED
+status : 201
 ```
 
 ### Get a Person by ID
@@ -206,7 +206,7 @@ GET /api/1
   "name": "Michael John",
   
 }
-
+status : 200
 ```
 
 ### Update a Person
@@ -229,7 +229,7 @@ Content-Type: application/json
   "id": "1",
   "name": "Updated Michael",
 }
-status : HTTP_202_ACCEPTED
+status : 200
 
 ```
 
@@ -244,7 +244,7 @@ DELETE /api/1
 **Response:**
 
 
- status:HTTP_204_No_Content
+ status: 204
 
 
 ## Testing

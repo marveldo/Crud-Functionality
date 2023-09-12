@@ -9,14 +9,14 @@ data = {'name': name1}
 
 response = requests.post(url,json=data)
 data = response.json()
-print(f"Your data has been created it is {data}")
+print(f"Your data has been created it is {data}", response.status_code)
 
 
 # function to test GET request
 def get(id):
     url3 = f'https://crud-functionality-hqud.onrender.com/api/{id}'
     response = requests.get(url3)
-    print(f"Here is your data {response.text}")
+    print(f"Here is your data {response.text}", response.status_code)
     
 
 get(int(data['id']))
@@ -28,7 +28,7 @@ def update(id,name):
     
     response = requests.put(url5, json= data)
 
-    print(f"your data has been updated to {response.text}")
+    print(f"your data has been updated to {response.text}", response.status_code)
 
 update(int(data['id']), name2)
 
@@ -38,7 +38,7 @@ def delete(id):
 
     response = requests.delete(url4)
 
-    print("Your data has been removed")
+    print("Your data has been removed", response.status_code)
     
 
 delete(data['id'])
