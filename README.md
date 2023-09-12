@@ -1,10 +1,29 @@
 
-# An Api capable of CRUD(create read update delete) functionalities on a persons data
+# An Api capable of CRUD(create read update delete) functionalities on a persons data This readme file contains explanations on how to use the file and also contains documentation on the file
+
+
+## Important modules i needed to complete this task
+
+Here are some of the important modules or software i needed to complete this task:
+
+
+```http
+
+1. python 3.7
+
+2. django
+
+3. djangorestframework
+
+4. requests was used when testing the api
+
+```
+
 
 A brief description on how the api can be used
 
 ## 
-#### Create Profile
+## Create Profile
 ```http
   GET /api
 ```
@@ -19,7 +38,7 @@ A brief description on how the api can be used
 ```http
   data = {"name": "anyname","id": "A given id"}
 ```
-#### Get Profile
+## Get Profile
 
 ```http
   GET /api/id/
@@ -40,7 +59,7 @@ A brief description on how the api can be used
   data = {"name": "anyname","id": "id passed into it"}
 ```
 
-#### Update Profile
+## Update Profile
 
 ```http
   PUT /api/id/
@@ -61,7 +80,7 @@ A brief description on how the api can be used
   data = {"name": "Updated name","id": "id passed into it"}
 
 ```
-#### Delete Profile
+## Delete Profile
 
 ```http
   PUT /api/id/
