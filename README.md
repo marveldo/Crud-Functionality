@@ -109,7 +109,7 @@ Before you begin, ensure you have met the following requirements:
 
 ### Get a Person by ID
 
-- **URL:** `/api/1/`
+- **URL:** `/api/1`
 - **Method:** `GET`
 - **Response:**
 
@@ -123,7 +123,7 @@ Before you begin, ensure you have met the following requirements:
 
 ### Update a Person
 
-- **URL:** `/api/1/`
+- **URL:** `/api/1`
 - **Method:** `PUT`
 - **Request Body:**
 
@@ -149,7 +149,7 @@ Before you begin, ensure you have met the following requirements:
 
 ### Delete a Person
 
-- **URL:** `/api/id/`
+- **URL:** `/api/id`
 - **Method:** `DELETE`
 - **Response:** `HTTP_204_No_Content`
 
@@ -167,7 +167,7 @@ Here are some sample requests and responses for the Person API:
 **Request:**
 
 ```http
-POST /api/persons
+POST /api
 Content-Type: application/json
 
 {
@@ -193,7 +193,7 @@ status : HTTP_201_CREATED
 **Request:**
 
 ```http
-GET /api/1/
+GET /api/1
 ```
 
 **Response:**
@@ -212,7 +212,7 @@ GET /api/1/
 **Request:**
 
 ```http
-PUT /api/1/
+PUT /api/1
 Content-Type: application/json
 
 {
@@ -236,7 +236,7 @@ status : HTTP_202_ACCEPTED
 **Request:**
 
 ```http
-DELETE /api/1/
+DELETE /api/1
 ```
 
 **Response:**
