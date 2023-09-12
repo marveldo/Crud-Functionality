@@ -119,6 +119,8 @@ Before you begin, ensure you have met the following requirements:
     "name": "Michael Oliver",
     
   }
+
+  status : HTTP_200_OK
   ```
 
 ### Update a Person
@@ -144,7 +146,7 @@ Before you begin, ensure you have met the following requirements:
    
   }
   
-    status : `HTTP_202_ACCEPTED`
+    status : HTTP_200_OK
   ```
 
 ### Delete a Person
