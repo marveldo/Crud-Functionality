@@ -44,6 +44,7 @@ Before you begin, ensure you have met the following requirements:
 - must have install django on your system
 - django rest framework must have been installed
 - corshearders must be installed
+- pyscopg2 must be installed
 
 
 
