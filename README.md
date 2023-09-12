@@ -21,6 +21,7 @@
     - [Get a Person by ID](#get-a-person-by-id-1)
     - [Update a Person](#update-a-person-1)
     - [Delete a Person](#delete-a-person-1)
+  -[Testing](#testing)
   -[Deployment](#deployment)
   -[challenges and limitations](#challenges-and-limitation)
  
@@ -232,7 +233,7 @@ DELETE /api/1/
  status:204 No Content
 ```
 
-
+## Testing
 for the test script visit https://github.com/marveldo/Crud-Functionality/blob/main/test.py
 
 a picture of the response when testing the api 
