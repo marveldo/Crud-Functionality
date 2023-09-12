@@ -36,10 +36,10 @@ def Getprofile(request,pk):
         return Response(serializer.data, status=status.HTTP_200_OK)
     
     if request.method == 'PUT':
-        data = request.data
+       
         try:
            profile = Profile.objects.get(id = pk)
-           data_info = data['name']
+           
         except Profile.DoesNotExist:
            return Response(status=status.HTTP_404_NOT_FOUND)
         
