@@ -39,13 +39,12 @@ def Getprofile(request,pk):
         data = request.data
         try:
            profile = Profile.objects.get(id = pk)
-           
+           data_info = data['name']
         except Profile.DoesNotExist:
            return Response(status=status.HTTP_404_NOT_FOUND)
-        try:
-            data_info = data['name']
-        except:
-            return Response(status = status.HTTP_400_BAD_REQUEST)
+        
+      
+            
 
              
         serializer = ProfileSerializer(profile, data = request.data)
