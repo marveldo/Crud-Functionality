@@ -99,7 +99,7 @@ Before you begin, ensure you have met the following requirements:
 
   ```json
   {
-    "_id": "1",
+    "id": "1",
     "name": "Michael Oliver",
     
   }
@@ -113,7 +113,7 @@ Before you begin, ensure you have met the following requirements:
 
   ```json
   {
-    "_id": "1",
+    "id": "1",
     "name": "Michael Oliver",
     
   }
@@ -135,7 +135,7 @@ Before you begin, ensure you have met the following requirements:
 
   ```json
   {
-    "_id": "1",
+    "id": "1",
     "name": "Updated Michael Oliver",
    
   }
@@ -174,7 +174,7 @@ Content-Type: application/json
 
 ```json
 {
-  "_id": "1",
+  "id": "1",
   "name": "Michael John",  
   
 }
@@ -192,7 +192,7 @@ GET /api/1/
 
 ```json
 {
-  "_id": "5fd5a4f1b2f317001c5c7c65",
+  "id": "5fd5a4f1b2f317001c5c7c65",
   "name": "Michael John",
   
 }
@@ -215,7 +215,7 @@ Content-Type: application/json
 
 ```json
 {
-  "_id": "1",
+  "id": "1",
   "name": "Updated Michael",
 }
 ```
