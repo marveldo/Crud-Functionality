@@ -1,5 +1,7 @@
 
-# An Api capable of CRUD(create read update delete) functionalities on a persons data This readme file contains explanations on how to use the file and also contains documentation on the file
+# An Api capable of CRUD(create read update delete) functionalities on a persons data 
+
+This readme file contains explanations on how to use the file and also contains documentation on the file
 
 
 ## Important modules i needed to complete this task
