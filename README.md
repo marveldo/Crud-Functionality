@@ -21,9 +21,10 @@
     - [Get a Person by ID](#get-a-person-by-id-1)
     - [Update a Person](#update-a-person-1)
     - [Delete a Person](#delete-a-person-1)
-  -[Testing](#testing)
-  -[Deployment](#deployment)
-  -[challenges and limitations](#challenges-and-limitation)
+
+  - [Testing](#testing)
+  - [Deployment](#deployment)
+  - [challenges and limitations](#challenges-and-limitation)
  
 
 
